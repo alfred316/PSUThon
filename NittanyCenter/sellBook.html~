@@ -113,7 +113,7 @@
 	  <option>Econonimics</option>
 	  <option>Business</option>
 	  <option>Sociology</option>
-	</select>
+	</select> <br>
 	 Enter ISPN:
         <input type="text" id="ispnBox" size=20 value=""> <br>  
 	Enter description:
