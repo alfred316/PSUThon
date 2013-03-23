@@ -15,31 +15,6 @@ input
 button-color=blue;
 }
 </style>
-<style type="text/css">
-.enterButton {
--moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
--webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
-background-color:#79bbff;
--moz-border-radius:6px;
--webkit-border-radius:6px;
-border-radius:6px;
-border:2px solid #84bbf3;
-display:inline-block;
-color:#ffffff;
-font-family:arial;
-font-size:28px;
-font-weight:bold;
-padding:6px 39px;
-text-decoration:none;
-text-shadow:1px 1px 0px #528ecc;
-}.enterButton:hover {
-background-color:#378de5;
-}.enterButton:active {
-position:relative;
-top:1px;
-}
-</style>
 </head>
 <body>
 <input type="button" value="Enter Website";>
