@@ -119,6 +119,7 @@
 	Enter description:
 	<textarea rows="5"></textarea> 
 	</p>
+ <button type="submit" class="btn">Submit</button>
 
 
       </div> <!-- /.container -->
