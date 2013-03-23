@@ -344,19 +344,19 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="span4">
-          <img src="textbooks.jpg">
+          <img src="textbooks.jpg" width="304" height="228">
           <h2>Sell Books</h2>
           <p>Submit a form with your name, contact information, and of course, what textbook you wish to sell! </p>
           <p><a class="btn" href="#">Click here! </a></p>
         </div><!-- /.span4 -->
         <div class="span4">
-          <img src="imgMBook.jpg">
+          <img src="imgMBook.jpg" width="304" height="228">
           <h2>Buy Books</h2>
           <p>Search for books using it's ISPN number and/or catagory </p>
           <p><a class="btn" href="#">Click here! </a></p>
         </div><!-- /.span4 -->
         <div class="span4">
-          <img src="feu.jpg">
+          <img src="feu.jpg" width="304" height="228">
           <h2>Future features!</h2>
           <p>We are planning features that will help you find study buddies for specific classes, finding roommates, and more! </p>
           <!--p><a class="btn" href="#">View details &raquo;</a></p-->
