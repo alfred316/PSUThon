@@ -1,8 +1,13 @@
+Thank you! Please hit back to go back to NittanyCenter!
 <html>
 <body>
-Welcome <?php echo $_POST["name"]; ?><br>
-<?php echo $_POST["category"]; ?><br>
-<?php echo $_POST["isbn"]; ?><br>
-<?php echo $_POST["desc"]; ?><br>
+<?php $name= $_POST["name"]; ?><br>
+<?php $category= $_POST["category"]; ?><br>
+<?php $isbn= $_POST["isbn"]; ?><br>
+<?php $desc= $_POST["desc"]; ?><br>
+<?php
+$mysqli= new mysqli("localhost", "root", "root", "bookLib");
+$mysqli->query("INSERT INTO Books VALUES ('$name', '$category', '$isbn', '$desc', NULL)");
+?>
 </body>
 </html>

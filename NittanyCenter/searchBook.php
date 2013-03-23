@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Nittany Center</title>
+    <title>NittanyCenter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -88,7 +88,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="nitCenterMain.html">Nittany Center</a>
+            <a class="brand" href="nitCenterMain.html">NittanyCenter</a>
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
@@ -99,14 +99,44 @@
             </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->
         </div><!-- /.navbar -->
+<select multiple="muktiple" style="width: 1170px;">
+<?php
+include("dbconfig.php");
 
-<form class="form-search">
-  <input type="text" class="input-medium search-query">
-  <button type="submit" class="btn">Search</button>
-</form>
+$query = "select * from Books";
+
+$result = $mysqli->query($query);
+
+if ($result){
+while($row = mysqli_fetch_array($result)) {
+  echo "<option value='".$row["Name"]. ", " .$row["Category"]. ", " .$row["ISBN"]. ", " .$row["Description"]."'>".$row["Name"]. ", " .$row["Category"]. ", " .$row["ISBN"]. ", " .$row["Description"]."</option>";
+}
+}
+else {
+echo mysqli_error();
+}
+?>
+</select>
 
 
-  </div> <!-- /.container -->
+<script>
+$(document).ready(function()
+{
+
+S("bookLib").click(function()
+{
+window.location = "#sellBook";
+});
+
+});
+</script>
+
+<ul data -role"listview" data-filter="true" data-filter-placeholder="Search Sellers" data-insert="true">
+
+</ul>
+  
+
+</div> <!-- /.container -->
     </div><!-- /.navbar-wrapper -->
  <!-- Le javascript
     ================================================== -->
