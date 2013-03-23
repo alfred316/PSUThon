@@ -92,7 +92,7 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="nitCenterMain.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li> 
               </ul>
@@ -103,6 +103,17 @@
 <p>
         Enter name:
         <input type="text" id="nameBox" size=20 value=""> <br>
+	Select Category:
+	<select>
+	  <option>Math</option>
+	  <option>Science</option>
+	  <option>Computer Science</option>
+	  <option>Psychology</option>
+	  <option>Music</option>
+	  <option>Econonimics</option>
+	  <option>Business</option>
+	  <option>Sociology</option>
+	</select>
 	 Enter ISPN:
         <input type="text" id="ispnBox" size=20 value=""> <br>  
 	Enter description:
